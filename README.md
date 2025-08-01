@@ -1,2 +1,115 @@
-# Mando-Website
-First time
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For O 💌</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff3e6, #ffe0cc);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .message-box {
+      background-color: #fff9f0;
+      padding: 30px 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 400px;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      animation: fadeInBounce 1.5s ease-out;
+    }
+
+    @keyframes fadeInBounce {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #5c3d00;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #664422;
+    }
+
+    .coffee {
+      font-size: 1.2em;
+    }
+
+    .heart {
+      font-size: 1.5em;
+      margin-top: 15px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #ffcc99;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      color: #5c3d00;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffbb88;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- First message -->
+  <div class="message-box" id="page1">
+    <h1>Hey O 💖</h1>
+    <p>Hope to see you tomorrow at the coffeshop <span class="coffee">☕</span></p>
+    <p class="heart">💌</p>
+    <button onclick="showNext()">Next</button>
+  </div>
+
+  <!-- Second message -->
+  <div class="message-box hidden" id="page2">
+    <h1>I miss your vanilla smell baby 💕</h1>
+    <p class="heart">💖💖💖</p>
+  </div>
+
+  <script>
+    function showNext() {
+      document.getElementById("page1").classList.add("hidden");
+      document.getElementById("page2").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
