@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Fancy Page</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="jquery.iMissYou.js"></script>
-    <script>
-        jQuery(document).ready(function($){
-            $.iMissYou({
-                title: "I Miss you Neat !",
-                favicon: {
-                    enabled: true,
-                    src:'iMissYouFavicon.ico'
-                }
-            });
-        });
-    </script>
-</head>
-<body>
-    <h1>Say Hey!</h1>
-</body>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #fff0f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 72px;
+        color: #e75480;
+        text-shadow: 2px 2px 4px #d87093;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I MISS YOU</h1>
+  </body>
 </html>
-
