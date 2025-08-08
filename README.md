@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>I MISS YOU NEAT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>I MISS YOU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #ffe6f0;
+      background-color: #fff0f5;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -14,15 +13,11 @@
       margin: 0;
     }
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 80px;
-      color: #cc0066;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 3s ease-in-out infinite alternate;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0.6; transform: scale(0.98); }
-      to { opacity: 1; transform: scale(1); }
+      font-family: 'Parisienne', cursive;
+      font-size: 72px;
+      color: #b30059;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
