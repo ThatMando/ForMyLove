@@ -9,7 +9,7 @@
     <script>
         jQuery(document).ready(function($){
             $.iMissYou({
-                title: "I Miss you !",
+                title: "I Miss you Neat !",
                 favicon: {
                     enabled: true,
                     src:'iMissYouFavicon.ico'
@@ -22,3 +22,4 @@
     <h1>Say Hey!</h1>
 </body>
 </html>
+
