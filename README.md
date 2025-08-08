@@ -1,27 +1,24 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>I MISS YOU</title>
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #fff0f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    h1 {
-      font-family: 'Parisienne', cursive;
-      font-size: 72px;
-      color: #b30059;
-      letter-spacing: 3px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>My Fancy Page</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jquery.iMissYou.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $.iMissYou({
+                title: "I Miss you !",
+                favicon: {
+                    enabled: true,
+                    src:'iMissYouFavicon.ico'
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-  <h1>I MISS YOU</h1>
+    <h1>Say Hey!</h1>
 </body>
 </html>
