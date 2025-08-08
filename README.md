@@ -1,24 +1,53 @@
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: #fff0f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url('small-brown-aesthetic-hearts-say7e3lt43ujclfy.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .rain {
+      position: absolute;
+      white-space: nowrap;
+      animation: fall linear infinite;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffcccc;
+      text-shadow: 1px 1px 2px #00000088;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -10%;
+        opacity: 0;
       }
-      h1 {
-        font-family: 'Great Vibes', cursive;
-        font-size: 72px;
-        color: #e75480;
-        text-shadow: 2px 2px 4px #d87093;
+      10% {
+        opacity: 1;
       }
-    </style>
-  </head>
-  <body>
-    <h1>I MISS YOU</h1>
-  </body>
+      100% {
+        top: 110%;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const count = 50; // number of falling messages
+    for (let i = 0; i < count; i++) {
+      const drop = document.createElement("div");
+      drop.className = "rain";
+      drop.textContent = "I MISS YOU ❤️";
+      drop.style.left = Math.random() * 100 + "vw";
+      drop.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      drop.style.animationDelay = Math.random() * 5 + "s";
+      document.body.appendChild(drop);
+    }
+  </script>
+</body>
 </html>
