@@ -1,5 +1,4 @@
-![photo_2025-08-08_15-10-58](https://github.com/user-attachments/assets/1f7fd553-f862-4a9d-971f-b9edd18bb460)
-![photo_2025-08-08_15-10-57](https://github.com/user-attachments/assets/18407227-be35-4dbf-b06c-e8e205d35d7e)
+
 <html>
 <head>
   <style>
