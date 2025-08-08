@@ -34,9 +34,33 @@
         opacity: 0;
       }
     }
+
+    .photo-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .photo {
+      border: 8px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      border-radius: 8px;
+      width: 200px;
+      height: auto;
+    }
   </style>
 </head>
 <body>
+  <div class="photo-container">
+    <img src="photo_2025-08-08_15-10-57.jpg" class="photo">
+    <img src="photo_2025-08-08_15-10-58.jpg" class="photo">
+  </div>
+
   <script>
     const count = 50; // number of falling messages
     for (let i = 0; i < count; i++) {
